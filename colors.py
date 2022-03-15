@@ -11,3 +11,6 @@ def echo(text: str, color: str, end: str = '\n') -> None:
     toprint = subprocess.getoutput(f'echo "{color}{text}{RESET}"')
     print(toprint, end=end)
 
+if __name__ == "__main__":
+    echo("Hello world", GREEN)
+
